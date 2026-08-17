@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: payment-service        # Must match the prefix of the file in GitHub
+  profiles:
+    active: dev                # Must match the environment suffix in GitHub
+  config:
+    import: "optional:configserver:http://localhost:8888" # Spring Boot 2.4+ import syntax

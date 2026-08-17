@@ -1,0 +1,14 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Mental-bicep/ecommerce-microservice
+          default-label: main          # Git branch name
+          search-paths: config         # Sub-folder where files live inside repo
+          clone-on-start: true        # Clones repo immediately upon server startup
