@@ -17,5 +17,5 @@ public class OrderNotificationConsumer {
 				+" orderId= "+event.getOrderId()+ " product= "+event.getProdName()+" amount= "+
 				event.getTotalAmount());
 	}
-	
+	 
 }
