@@ -9,6 +9,7 @@ import com.notification.event.OrderPlacedEvent;
 
 @Service
 public class OrderNotificationConsumer {
+	
 	private static final Logger log = LoggerFactory.getLogger(OrderNotificationConsumer.class);
 	
 	@KafkaListener(topics="ecom-service.order-placed-topic", groupId = "notification-group")
